@@ -52,6 +52,7 @@ body {
   height: 50px;
   border-radius: 5px;
   border: none;
+   padding: 20px;
 }
 
 .input_two {
@@ -61,11 +62,11 @@ body {
   border-radius: 5px;
   border: none;
   margin-top: 20px;
+   padding: 20px;
 }
 
 ::placeholder {
   color: #c7c7c7;
-  padding: 15px;
   font-family: "Ubuntu Condensed", sans-serif;
   text-transform: capitalize;
 }
@@ -80,6 +81,8 @@ body {
   color: #ffffff;
   font-family: "Ubuntu Condensed", sans-serif;
   font-size: 17px;
+  cursor: pointer;
+ 
 }
 
 .main_content {
@@ -129,6 +132,7 @@ body {
   display: none;
   margin-top: 10px;
   padding: 3px 5px;
+  cursor: pointer;
 }
 
 .complete_description {
@@ -144,6 +148,10 @@ body {
 .note:hover > .sub_note .complete_description,
 .note:hover > .button .note_button {
   display: inline-block;
+}
+
+.note:hover > .sub_note .detail {
+  display: none;
 }
 
 .note_button:hover {
