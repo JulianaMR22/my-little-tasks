@@ -3,7 +3,10 @@ let area_description = document.getElementById("area_description");
 let button_add = document.getElementById("button_add");
 let content_notes = document.getElementById("content_notes");
 
-button_add.addEventListener("click",function(){
+button_add.addEventListener("click", function () {
+  if (input_name.value === "" || area_description.value === "") {
+    alert("Debes llenar todos los campos vacios ");
+  } else {
     content_notes.innerHTML += `<div class="note" id="note">
             <p class="title_note">${input_name.value}</p>
             <p class="sub_note">
@@ -17,6 +20,7 @@ button_add.addEventListener("click",function(){
               <button class="note_button" onclick="document.getElementById('note').remove()">Delete</button>
             </div>
           </div>`;
-    input_name.value = "";
-    area_description.value = "";
+  }
+  input_name.value = "";
+  area_description.value = "";
 });
