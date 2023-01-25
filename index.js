@@ -2,7 +2,7 @@ let input_name = document.getElementById("input_name");
 let area_description = document.getElementById("area_description");
 let button_add = document.getElementById("button_add");
 let content_notes = document.getElementById("content_notes");
-
+let limit = 9;
 button_add.addEventListener("click", function () {
   if (input_name.value === "" || area_description.value === "") {
     alert("Debes llenar todos los campos vacios ");
@@ -20,7 +20,11 @@ button_add.addEventListener("click", function () {
               <button class="note_button" onclick="document.getElementById('note').remove()">Delete</button>
             </div>
           </div>`;
+    if (content_notes.innerHTML > limit) {
+      alert("Llegaste al limite de notas");
+    }
   }
+
   input_name.value = "";
   area_description.value = "";
 });
