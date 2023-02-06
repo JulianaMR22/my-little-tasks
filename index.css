@@ -52,7 +52,7 @@ body {
   height: 50px;
   border-radius: 5px;
   border: none;
-   padding: 20px;
+  padding: 20px;
 }
 
 .input_two {
@@ -62,7 +62,7 @@ body {
   border-radius: 5px;
   border: none;
   margin-top: 20px;
-   padding: 20px;
+  padding: 20px;
 }
 
 ::placeholder {
@@ -82,7 +82,6 @@ body {
   font-family: "Ubuntu Condensed", sans-serif;
   font-size: 17px;
   cursor: pointer;
- 
 }
 
 .main_content {
@@ -143,7 +142,7 @@ body {
   transform: scale(1.1);
   transition: all 0.3s;
   /* height: 160px; */
-   box-shadow: 0px 15px 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 20px 10px rgba(0, 0, 0, 0.2);
 }
 .note:hover > .sub_note .complete_description,
 .note:hover > .button .note_button {
@@ -171,4 +170,41 @@ body {
   text-align: center;
   text-transform: capitalize;
   margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 88%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_title {
+    height: auto;
+  }
+
+  .principal {
+    width: 100%;
+  }
+
+  .main_content {
+    width: 100%;
+  }
+
+  .note {
+    width: 100%;
+  }
+
+  .container_inputs {
+    margin-left: 20px;
+  }
+
+  .input_one {
+    width: 265px;
+  }
+
+  .input_two {
+    width: 265px;
+  }
 }
